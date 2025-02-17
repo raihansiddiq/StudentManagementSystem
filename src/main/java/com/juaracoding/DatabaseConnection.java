@@ -18,8 +18,8 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=university_db";
-    private static final String USER = "universityuser"; // Ganti dengan username SQL Server Anda
-    private static final String PASSWORD = "Badud456"; // Ganti dengan password SQL Server Anda
+    private static final String USER = "universityuser"; 
+    private static final String PASSWORD = "Badud456"; 
 
     static {
         try {
