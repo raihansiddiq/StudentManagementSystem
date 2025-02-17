@@ -71,7 +71,7 @@ public class TestConnection {
 
         if (testConn.connect()) {
             System.out.println("Connected to the database successfully.");
-            // Tambahkan logika program Anda di sini.
+            
 
             testConn.disconnect();
         } else {
