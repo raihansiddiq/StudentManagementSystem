@@ -21,7 +21,7 @@ public class Main {
             System.out.println("8. Keluar");
 
             int choice = getIntInput("Pilih opsi: ");
-            scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+            scanner.nextLine(); 
             try {
                 switch (choice) {
                     case 1:
@@ -62,11 +62,11 @@ public class Main {
         System.out.print("Masukkan email: ");
         String email = scanner.nextLine();
         int age = getIntInput("Masukkan umur: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine(); 
         System.out.print("Masukkan jurusan: ");
         String major = scanner.nextLine();
         double gpa = getDoubleInput("Masukkan GPA: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine();
 
         Student student = new Student();
         student.setName(name);
@@ -88,17 +88,17 @@ public class Main {
 
     private static void updateMahasiswa() throws SQLException {
         int id = getIntInput("Masukkan ID mahasiswa yang ingin diupdate: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine(); 
         System.out.print("Masukkan nama baru: ");
         String name = scanner.nextLine();
         System.out.print("Masukkan email baru: ");
         String email = scanner.nextLine();
         int age = getIntInput("Masukkan umur baru: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine(); 
         System.out.print("Masukkan jurusan baru: ");
         String major = scanner.nextLine();
         double gpa = getDoubleInput("Masukkan GPA baru: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine(); 
 
         Student student = new Student();
         student.setId(id);
@@ -114,7 +114,7 @@ public class Main {
 
     private static void hapusMahasiswa() throws SQLException {
         int id = getIntInput("Masukkan ID mahasiswa yang ingin dihapus: ");
-        scanner.nextLine(); // Tambahkan ini untuk menghindari masalah dengan Scanner
+        scanner.nextLine(); 
         studentDAO.deleteStudent(id);
         System.out.println("Mahasiswa berhasil dihapus.");
     }
